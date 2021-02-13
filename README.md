@@ -5,7 +5,7 @@ This code lets you reset your doorbell chime if it begins to hang/buzz between t
 My Eufy Wireless Video Doorbell (which is wired -- for the purpose of allowing me to use my own mechanical chime, don't ask me why they made it this way) after 2-3 days of idling, it will send a longer pulse over time to my mechanical doorbell. This results in an immediate "ding", but a longer pause and buzzing before the "dong". This can be seen in the video here: https://imgur.com/a/db6HG3L
 
 ## Solution
-Oddly enough, turning the doorbell chime off and then back on fixes the problem for a few days. To simulate this on a server nightly as a cron job, a Python script would take care of this.
+Oddly enough, switching between the mechanical and digital chime and back to the mechanical chime fixes the problem for a few days. To simulate this on a server nightly as a cron job, a Python script would take care of this.
 
 To perform this, I determined the P2P commands to send by capturing the pcap on the mobile device and then replayed those commands.
 
