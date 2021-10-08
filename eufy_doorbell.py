@@ -20,7 +20,7 @@ rand_port = random.randrange(20000, 65535, 1)
 HOST_UDP_PORT = rand_port
 
 MESSAGE_LOOKUP = binascii.unhexlify('f13000020000')
-MESSAGE_CHECK_CAM = binascii.unhexlify('f1410017' + p2p_did)
+MESSAGE_CHECK_CAM = binascii.unhexlify('f1410017' + p2p_mod +'000000000000')
 
 MESSAGE_PING = binascii.unhexlify('f1e00000')
 MESSAGE_PONG = binascii.unhexlify('f1e10000')
