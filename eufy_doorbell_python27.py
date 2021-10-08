@@ -3,6 +3,8 @@ import binascii
 import time
 import random
 
+# Python 2.7 version
+
 # Get the port to send data to with the lookup request
 
 actor_id = binascii.hexlify("") # 40 character account number here
